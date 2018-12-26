@@ -36,7 +36,7 @@ function preparePluginList() {
 
 
     function checkPlugin(n=0) {
-      var exec_ = "wp plugin activate --path=/var/www/html/yourtraveljobs ";
+      var exec_ = "wp plugin deactivate --path=/var/www/html/yourtraveljobs ";
       var exec__ = exec_.concat(plugins[n])
       console.log(exec__)
       //exec(exec__, puts);
